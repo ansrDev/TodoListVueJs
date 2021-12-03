@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: monospace;
+  background-color: blue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app{
+  width: 400px;
+  background-color:rgb(199, 208, 218);
+  transition: .3s;
+}
+
+.form-input{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  border: 1px solid slategray;
+}
+.form-input input{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  border: none;
+  appearance: none;
+  outline: none;
+}
+.form-input button{
+  width: 20%;
+  height: 100%;
+  border: none;
+  appearance: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: rgb(235, 218, 68);
+  color:white;
+  cursor: pointer;
+  transition: .3s;
+}
+.form-input button:hover{
+background-color:rgba(235, 218, 68,0.5); 
+}
+
+.list-item{
+  display: flex;
+  align-items: center;
+  margin: 5px 5px;
+  height: 100%;
+  /* width: 100%; */
+}
+.list-item .item-text{
+  height: 20px;
+  background-color: white;
+  width:100%;
+  padding: 2px;
+  font-size: 14px;
+}
+.list-item .item-edit button,.list-item .item-delete button{
+  color: white;
+  width: 100%;
+  height: 100%;
+  border: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.list-item .item-edit,.list-item .item-delete{
+  width: 30px;
+  height: 20px;
+}
+.list-item .item-edit button{
+  transition: .3s;
+  background-color: rgb(26, 255, 26);
+
+}
+.list-item .item-edit button:hover{
+background-color: rgba(26, 255, 26,0.5);
+
+}
+.list-item .item-delete button{
+  transition: .3s;
+background-color: rgb(255, 53, 53);
+}
+.list-item .item-delete button:hover{
+background-color: rgba(255, 53, 53,0.5);
+}
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
